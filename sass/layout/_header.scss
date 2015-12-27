@@ -1,6 +1,37 @@
 header{
+  background-color: transparent;
+  position:fixed;
+  z-index:9999;
   .top-headerline{
-    height: 10px;
+    height: 5px;
     background-color: #d11f2d;
+  }
+  h1{
+    display:inline-block;
+    float:left;
+    width:160px;
+    line-height: 0.5px;
+    .logo{
+      margin-right:5px;
+      text-transform: uppercase;
+      color: white;
+      font-size: 14px;
+      font-weight: 700;
+    }
+    .gradient-element{
+      display:inline-block;
+      overflow:hidden;
+      height:12px;
+      width: 75px;
+      background: linear-gradient(to right, rgba(1, 138, 218, 1) 33.33%, rgba(1, 138, 218, 0.75) 33.33%, rgba(1, 138, 218, 0.5) 25.33%, rgba(1, 138, 218, 0.5) 8.01%);
+    }
+    .logo-text{
+      color: white;
+      font-size: 10px;
+      font-weight: 300;
+    }
+  }
+  .dropdown{
+    overflow:hidden;
   }
 }
