@@ -75,7 +75,7 @@ a:hover {
 header {
   background-color: transparent;
   position: fixed;
-  z-index: 9999;
+  z-index: 1;
   width: 100%;
 }
 /* line 6, ../sass/layout/_header.scss */
@@ -83,14 +83,27 @@ header .top-headerline {
   height: 5px;
   background-color: #d11f2d;
 }
-/* line 10, ../sass/layout/_header.scss */
+@media screen and (min-width: 768px) {
+  /* line 6, ../sass/layout/_header.scss */
+  header .top-headerline {
+    height: 10px;
+  }
+}
+/* line 13, ../sass/layout/_header.scss */
 header h1 {
   display: inline-block;
   float: left;
   width: 160px;
   line-height: 0.5px;
 }
-/* line 15, ../sass/layout/_header.scss */
+@media screen and (min-width: 768px) {
+  /* line 13, ../sass/layout/_header.scss */
+  header h1 {
+    margin-top: 40px;
+    width: 190px;
+  }
+}
+/* line 22, ../sass/layout/_header.scss */
 header h1 .logo {
   margin-right: 5px;
   text-transform: uppercase;
@@ -98,7 +111,13 @@ header h1 .logo {
   font-size: 14px;
   font-weight: 700;
 }
-/* line 22, ../sass/layout/_header.scss */
+@media screen and (min-width: 768px) {
+  /* line 22, ../sass/layout/_header.scss */
+  header h1 .logo {
+    font-size: 20px;
+  }
+}
+/* line 32, ../sass/layout/_header.scss */
 header h1 .gradient-element {
   display: inline-block;
   overflow: hidden;
@@ -106,36 +125,68 @@ header h1 .gradient-element {
   width: 75px;
   background: linear-gradient(to right, #018ada 33.33%, rgba(1, 138, 218, 0.75) 33.33%, rgba(1, 138, 218, 0.5) 25.33%, rgba(1, 138, 218, 0.5) 8.01%);
 }
-/* line 29, ../sass/layout/_header.scss */
+/* line 39, ../sass/layout/_header.scss */
 header h1 .logo-text {
   color: white;
   font-size: 10px;
   font-weight: 300;
 }
-/* line 35, ../sass/layout/_header.scss */
+@media screen and (min-width: 768px) {
+  /* line 39, ../sass/layout/_header.scss */
+  header h1 .logo-text {
+    font-size: 12px;
+  }
+}
+/* line 48, ../sass/layout/_header.scss */
 header .dropdown {
   overflow: hidden;
   float: right;
   position: relative;
+  width: 200px;
+  height: 100px;
 }
-/* line 39, ../sass/layout/_header.scss */
+@media screen and (min-width: 768px) {
+  /* line 48, ../sass/layout/_header.scss */
+  header .dropdown {
+    margin-top: 40px;
+  }
+}
+/* line 57, ../sass/layout/_header.scss */
 header .dropdown button {
   background: transparent;
   border: none;
   cursor: pointer;
+  float: right;
 }
-/* line 44, ../sass/layout/_header.scss */
+/* line 62, ../sass/layout/_header.scss */
 header .dropdown button:focus + .dropdown-menu {
   display: block;
 }
-/* line 47, ../sass/layout/_header.scss */
+/* line 65, ../sass/layout/_header.scss */
 header .dropdown button .fa {
   font-size: 30px;
   color: #fff;
 }
-/* line 52, ../sass/layout/_header.scss */
+/* line 70, ../sass/layout/_header.scss */
 header .dropdown .dropdown-menu {
   display: none;
+  position: absolute;
+  top: 10px;
+  left: 100px;
+  width: 100px;
+  text-align: left;
+}
+/* line 77, ../sass/layout/_header.scss */
+header .dropdown .dropdown-menu a {
+  color: white;
+  font-size: 10px;
+  font-weight: 700;
+}
+@media screen and (min-width: 768px) {
+  /* line 77, ../sass/layout/_header.scss */
+  header .dropdown .dropdown-menu a {
+    font-size: 14px;
+  }
 }
 
 /* line 1, ../sass/landing/_hero.scss */
