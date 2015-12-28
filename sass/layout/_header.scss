@@ -2,6 +2,7 @@ header{
   background-color: transparent;
   position:fixed;
   z-index:9999;
+  width: 100%;
   .top-headerline{
     height: 5px;
     background-color: #d11f2d;
@@ -33,5 +34,24 @@ header{
   }
   .dropdown{
     overflow:hidden;
+    float: right;
+    position: relative;
+    button{
+      background: transparent;
+      border: none;
+      cursor: pointer;
+      
+      &:focus+.dropdown-menu{
+        display:block;
+      }
+      .fa{
+        font-size: 30px;
+        color: #fff;
+      }
+    }
+    .dropdown-menu{
+      display:none;
+
+    }
   }
 }

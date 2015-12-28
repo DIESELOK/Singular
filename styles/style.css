@@ -76,20 +76,21 @@ header {
   background-color: transparent;
   position: fixed;
   z-index: 9999;
+  width: 100%;
 }
-/* line 5, ../sass/layout/_header.scss */
+/* line 6, ../sass/layout/_header.scss */
 header .top-headerline {
   height: 5px;
   background-color: #d11f2d;
 }
-/* line 9, ../sass/layout/_header.scss */
+/* line 10, ../sass/layout/_header.scss */
 header h1 {
   display: inline-block;
   float: left;
   width: 160px;
   line-height: 0.5px;
 }
-/* line 14, ../sass/layout/_header.scss */
+/* line 15, ../sass/layout/_header.scss */
 header h1 .logo {
   margin-right: 5px;
   text-transform: uppercase;
@@ -97,7 +98,7 @@ header h1 .logo {
   font-size: 14px;
   font-weight: 700;
 }
-/* line 21, ../sass/layout/_header.scss */
+/* line 22, ../sass/layout/_header.scss */
 header h1 .gradient-element {
   display: inline-block;
   overflow: hidden;
@@ -105,21 +106,42 @@ header h1 .gradient-element {
   width: 75px;
   background: linear-gradient(to right, #018ada 33.33%, rgba(1, 138, 218, 0.75) 33.33%, rgba(1, 138, 218, 0.5) 25.33%, rgba(1, 138, 218, 0.5) 8.01%);
 }
-/* line 28, ../sass/layout/_header.scss */
+/* line 29, ../sass/layout/_header.scss */
 header h1 .logo-text {
   color: white;
   font-size: 10px;
   font-weight: 300;
 }
-/* line 34, ../sass/layout/_header.scss */
+/* line 35, ../sass/layout/_header.scss */
 header .dropdown {
   overflow: hidden;
+  float: right;
+  position: relative;
+}
+/* line 39, ../sass/layout/_header.scss */
+header .dropdown button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+/* line 44, ../sass/layout/_header.scss */
+header .dropdown button:focus + .dropdown-menu {
+  display: block;
+}
+/* line 47, ../sass/layout/_header.scss */
+header .dropdown button .fa {
+  font-size: 30px;
+  color: #fff;
+}
+/* line 52, ../sass/layout/_header.scss */
+header .dropdown .dropdown-menu {
+  display: none;
 }
 
 /* line 1, ../sass/landing/_hero.scss */
 .hero {
   position: relative;
-  min-height: 3;
+  min-height: 320px;
   background: url("../images/hero-bg.jpg") no-repeat;
   background-size: cover;
   text-align: center;
