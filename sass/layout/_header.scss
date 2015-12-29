@@ -34,7 +34,7 @@ header{
       overflow:hidden;
       height:12px;
       width: 75px;
-      background: linear-gradient(to right, rgba(1, 138, 218, 1) 33.33%, rgba(1, 138, 218, 0.75) 33.33%, rgba(1, 138, 218, 0.5) 25.33%, rgba(1, 138, 218, 0.5) 8.01%);
+      background:linear-gradient(to right, rgba(1, 138, 218, 1) 33%, rgba(1, 138, 218, 0.75) 33%, rgba(1, 138, 218, 0.5) 25%, rgba(1, 138, 218, 0) 9%);
     }
     .logo-text{
       color: white;
@@ -49,7 +49,7 @@ header{
     overflow: hidden;
     float: right;
     position: relative;
-    width: 200px;
+    width: 113px;
     height: 100px;
     @media screen and (min-width: 768px) {
       margin-top:40px;
@@ -71,9 +71,12 @@ header{
       display: none;
       position: absolute;
       top: 10px;
-      left: 100px;
+      left: 40px;
       width: 100px;
       text-align: left;
+      @media screen and (min-width: 768px) {
+        left: 30px;
+      }
       a{
         color: white;
         font-size: 10px;
