@@ -1,0 +1,37 @@
+.download-section{
+  background: #222 url("../images/download-bg.jpg") no-repeat;
+  background-size: cover;
+  p{
+    margin:25px auto 10px;
+    color: white;
+    font-size: 10px;
+    line-height: 18px;
+    text-align: center;
+    @media screen and (min-width: 768px) {
+      margin:100px auto 70px;
+      padding: 0 15px;
+      width:791px;
+      font-size: 20px;
+      line-height: 36px;
+    }
+  }
+  .download-btn{
+    display:block;
+    width:100%;
+    padding:15px;
+    border: 3px solid white;
+    margin:0 auto 10px;
+    color: white;
+    font-size: 15px;
+    font-weight: 400;
+    text-align: center;
+    @media screen and (min-width: 420px) {
+      width:390px;
+    }
+    @media screen and (min-width: 768px) {
+      margin:0 auto 100px;
+      width:390px;
+      font-size: 30px;
+    }
+  }
+}

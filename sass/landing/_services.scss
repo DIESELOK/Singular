@@ -1,0 +1,91 @@
+.services{
+  background-color: #d11f2d;
+  color:#fff;
+  h2{
+    margin:10px auto 10px;
+    text-align: center;
+    font-weight: 400;
+    @media screen and (min-width: 768px) {
+      margin:90px 0 70px;
+      font-size: 40px;
+    }
+  }
+  ul{
+    overflow: hidden;
+    li{
+      padding: 10px;
+      @include span(12 of 12);
+      @media screen and (min-width: 461px) and (max-width: 899px) {
+        @include span(6 of 12);
+        &:nth-of-type(2){
+           @include last;
+         }
+        &:nth-of-type(4){
+          @include last;
+        }
+        &:nth-of-type(6){
+          @include last;
+        }
+        &:nth-of-type(8){
+          @include last;
+        }
+      }
+      @media screen and (min-width: 900px) and (max-width: 1059px){
+        margin-bottom: 90px;
+        @include span(4 of 12);
+        &:nth-of-type(3){
+          @include last;
+        }
+        &:nth-of-type(6){
+          @include last;
+        }
+      }
+      @media screen and (min-width: 1060px){
+        margin-bottom: 90px;
+        @include span(3 of 12);
+        &:nth-of-type(4){
+          @include last;
+        }
+        &:nth-of-type(8){
+          @include last;
+        }
+      }
+      p{
+        font-size: 10px;
+        text-align: justify;
+        font-weight: 400;
+        line-height: 20px;
+        @media screen and (min-width: 768px) {
+          font-size: 13px;
+        }
+      }
+    }
+  }
+  .head-contents{
+    display:flex;
+    align-items:center;
+    margin-bottom:10px;
+    h4{
+      color: #fefefe;
+      font-family: Montserrat;
+      font-size: 10px;
+      font-weight: 700;
+      @media screen and (min-width: 768px) {
+        font-size: 18px;
+      }
+    }
+  }
+  span{
+    color:black;
+    width:42px;
+    height:42px;
+    margin-right:10px;
+    padding:5px;
+    background-color: white;
+    border-radius: 2px 1px 1px 2px;
+    text-align: center;
+    line-height: 2;
+    font-size: 18px;
+
+  }
+}

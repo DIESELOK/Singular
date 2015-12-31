@@ -1,15 +1,18 @@
 // Screen
 // ======
-@import url(https://fonts.googleapis.com/css?family=Lato:400,700);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700);
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,300,700);
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
 @import 'compass';
 @import "grids";
 @import "reset";
 @import "layout/header";
 @import "landing/hero";
 @import "landing/intro";
+@import "landing/download-section";
 @import "landing/features";
 @import "landing/portfolio";
-@import "landing/contact-us";
+@import "landing/services";
 @import "layout/footer";
 @include border-box-sizing();
 .container{
