@@ -454,7 +454,6 @@ header .dropdown .dropdown-menu a {
 /* line 1, ../sass/landing/_portfolio.scss */
 .portfolio {
   overflow: hidden;
-<<<<<<< HEAD
   *zoom: 1;
   background-color: #222;
 }
@@ -516,108 +515,6 @@ header .dropdown .dropdown-menu a {
   .portfolio .filter-navigation li a {
     font-size: 14px;
   }
-=======
-  background-color: #f6f9f9;
-  text-align: center;
-}
-@media screen and (min-width: 768px) {
-  /* line 1, ../sass/landing/_portfolio.scss */
-  .portfolio {
-    min-height: 850px;
-  }
-}
-/* line 8, ../sass/landing/_portfolio.scss */
-.portfolio .section-title {
-  margin: 25px 0 10px;
-  color: #2d3950;
-  font-size: 20px;
-}
-@media screen and (min-width: 768px) {
-  /* line 8, ../sass/landing/_portfolio.scss */
-  .portfolio .section-title {
-    margin: 75px 0 15px;
-    font-size: 41px;
-  }
-}
-/* line 17, ../sass/landing/_portfolio.scss */
-.portfolio p {
-  margin-bottom: 25px;
-  color: #909090;
-  font-size: 15px;
-  line-height: 16px;
-}
-/* line 24, ../sass/landing/_portfolio.scss */
-.portfolio .portfolio-list li {
-  position: relative;
-  height: 100%;
-  margin-bottom: 10px;
-}
-/* line 28, ../sass/landing/_portfolio.scss */
-.portfolio .portfolio-list li .portfolio-item {
-  position: relative;
-  display: block;
-  height: 100%;
-}
-@media screen and (min-width: 391px) {
-  /* line 28, ../sass/landing/_portfolio.scss */
-  .portfolio .portfolio-list li .portfolio-item {
-    width: 360px;
-  }
-}
-@media screen and (min-width: 391px) {
-  /* line 24, ../sass/landing/_portfolio.scss */
-  .portfolio .portfolio-list li {
-    display: inline-block;
-    overflow: hidden;
-    width: 360px;
-  }
-}
-@media screen and (min-width: 768px) {
-  /* line 42, ../sass/landing/_portfolio.scss */
-  .portfolio .portfolio-list li:nth-child(n) {
-    width: 32.20339%;
-    float: left;
-    margin-right: 1.69492%;
-    margin-bottom: 25px;
-  }
-  /* line 46, ../sass/landing/_portfolio.scss */
-  .portfolio .portfolio-list li:nth-child(3n+3) {
-    float: right;
-    margin-right: 0;
-  }
-}
-/* line 50, ../sass/landing/_portfolio.scss */
-.portfolio .portfolio-list li .portfolio-rollover {
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 360px;
-  height: 260px;
-  opacity: 0;
-  background-color: #15a4fa;
-  border-radius: 2px;
-  transition: 0.2s ease;
-}
-/* line 61, ../sass/landing/_portfolio.scss */
-.portfolio .portfolio-list li .portfolio-rollover:hover {
-  opacity: .9;
-}
-/* line 64, ../sass/landing/_portfolio.scss */
-.portfolio .portfolio-list li .portfolio-rollover a {
-  display: inline-block;
-  width: 42px;
-  height: 42px;
-  margin: 115px 6px;
-  border: 1px solid white;
-  border-radius: 2px;
-}
-/* line 71, ../sass/landing/_portfolio.scss */
-.portfolio .portfolio-list li .portfolio-rollover a span {
-  padding: 12px;
-  font-size: 15px;
-  color: #fff;
->>>>>>> origin/gh-pages
 }
 
 /* line 1, ../sass/landing/_services.scss */
