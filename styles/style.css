@@ -556,226 +556,146 @@ header .dropdown .dropdown-menu a {
   color: #fff;
 }
 
-/* line 1, ../sass/landing/_contact-us.scss */
-.contact-us {
-  overflow: hidden;
-  min-height: 350px;
-  background-image: url("../images/contact-bg.png");
-  background-size: cover;
+/* line 1, ../sass/landing/_services.scss */
+.services {
+  background-color: #d11f2d;
+  color: #fff;
+}
+/* line 4, ../sass/landing/_services.scss */
+.services h2 {
+  margin: 10px auto 10px;
   text-align: center;
-  color: #fff;
+  font-weight: 400;
 }
-/* line 8, ../sass/landing/_contact-us.scss */
-.contact-us .opacity-bg {
-  background: rgba(45, 57, 80, 0.8);
+@media screen and (min-width: 768px) {
+  /* line 4, ../sass/landing/_services.scss */
+  .services h2 {
+    margin: 90px 0 70px;
+    font-size: 40px;
+  }
 }
-/* line 11, ../sass/landing/_contact-us.scss */
-.contact-us .section-title {
-  margin: 30px 0 10px;
-  font-size: 20px;
+/* line 13, ../sass/landing/_services.scss */
+.services ul {
+  overflow: hidden;
 }
-/* line 15, ../sass/landing/_contact-us.scss */
-.contact-us h5 {
-  margin-bottom: 15px;
-  color: #999;
-  font-size: 12px;
-}
-/* line 20, ../sass/landing/_contact-us.scss */
-.contact-us form {
+/* line 15, ../sass/landing/_services.scss */
+.services ul li {
+  padding: 10px;
   width: 100%;
+  float: left;
+  margin-left: 0;
+  margin-right: 0;
 }
-/* line 22, ../sass/landing/_contact-us.scss */
-.contact-us form input {
-  width: 100%;
-  height: 33px;
-  margin-bottom: 10px;
-  border: 1px solid #999;
-  border-radius: 2px;
-  background: transparent;
-}
-/* line 29, ../sass/landing/_contact-us.scss */
-.contact-us form input:focus {
-  color: #fff;
-}
-/* line 61, ../../../../../Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/css3/_user-interface.scss */
-.contact-us form input:-moz-placeholder {
-  padding: 1px;
-  color: #999;
-  font-family: "Lato", sans-serif;
-  font-size: 10px;
-}
-/* line 64, ../../../../../Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/css3/_user-interface.scss */
-.contact-us form input::-moz-placeholder {
-  padding: 1px;
-  color: #999;
-  font-family: "Lato", sans-serif;
-  font-size: 10px;
-}
-/* line 67, ../../../../../Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/css3/_user-interface.scss */
-.contact-us form input:-ms-input-placeholder {
-  padding: 1px;
-  color: #999;
-  font-family: "Lato", sans-serif;
-  font-size: 10px;
-}
-/* line 56, ../../../../../Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/css3/_user-interface.scss */
-.contact-us form input::-webkit-input-placeholder {
-  padding: 1px;
-  color: #999;
-  font-family: "Lato", sans-serif;
-  font-size: 10px;
-}
-@media screen and (min-width: 591px) {
-  /* line 22, ../sass/landing/_contact-us.scss */
-  .contact-us form input {
-    width: 560px;
-  }
-  /* line 61, ../../../../../Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/css3/_user-interface.scss */
-  .contact-us form input:-moz-placeholder {
-    font-family: "Lato", sans-serif;
-    font-size: 14px;
-  }
-  /* line 64, ../../../../../Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/css3/_user-interface.scss */
-  .contact-us form input::-moz-placeholder {
-    font-family: "Lato", sans-serif;
-    font-size: 14px;
-  }
-  /* line 67, ../../../../../Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/css3/_user-interface.scss */
-  .contact-us form input:-ms-input-placeholder {
-    font-family: "Lato", sans-serif;
-    font-size: 14px;
-  }
-  /* line 56, ../../../../../Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/css3/_user-interface.scss */
-  .contact-us form input::-webkit-input-placeholder {
-    font-family: "Lato", sans-serif;
-    font-size: 14px;
-  }
-}
-/* line 46, ../sass/landing/_contact-us.scss */
-.contact-us form textarea {
-  width: 100%;
-  height: 100px;
-  border: 1px solid #999;
-  border-radius: 2px;
-  background: transparent;
-  font-family: "Lato", sans-serif;
-  font-size: 10px;
-}
-/* line 54, ../sass/landing/_contact-us.scss */
-.contact-us form textarea:focus {
-  color: #fff;
-  font-size: 14px;
-}
-/* line 61, ../../../../../Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/css3/_user-interface.scss */
-.contact-us form textarea:-moz-placeholder {
-  padding: 3px;
-  color: #999;
-  font-family: "Lato", sans-serif;
-  font-size: 10px;
-}
-/* line 64, ../../../../../Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/css3/_user-interface.scss */
-.contact-us form textarea::-moz-placeholder {
-  padding: 3px;
-  color: #999;
-  font-family: "Lato", sans-serif;
-  font-size: 10px;
-}
-/* line 67, ../../../../../Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/css3/_user-interface.scss */
-.contact-us form textarea:-ms-input-placeholder {
-  padding: 3px;
-  color: #999;
-  font-family: "Lato", sans-serif;
-  font-size: 10px;
-}
-/* line 56, ../../../../../Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/css3/_user-interface.scss */
-.contact-us form textarea::-webkit-input-placeholder {
-  padding: 3px;
-  color: #999;
-  font-family: "Lato", sans-serif;
-  font-size: 10px;
-}
-@media screen and (min-width: 591px) {
-  /* line 46, ../sass/landing/_contact-us.scss */
-  .contact-us form textarea {
-    width: 560px;
-  }
-  /* line 61, ../../../../../Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/css3/_user-interface.scss */
-  .contact-us form textarea:-moz-placeholder {
-    padding: 3px;
-    color: #999;
-    font-family: "Lato", sans-serif;
-    font-size: 14px;
-  }
-  /* line 64, ../../../../../Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/css3/_user-interface.scss */
-  .contact-us form textarea::-moz-placeholder {
-    padding: 3px;
-    color: #999;
-    font-family: "Lato", sans-serif;
-    font-size: 14px;
-  }
-  /* line 67, ../../../../../Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/css3/_user-interface.scss */
-  .contact-us form textarea:-ms-input-placeholder {
-    padding: 3px;
-    color: #999;
-    font-family: "Lato", sans-serif;
-    font-size: 14px;
-  }
-  /* line 56, ../../../../../Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/css3/_user-interface.scss */
-  .contact-us form textarea::-webkit-input-placeholder {
-    padding: 3px;
-    color: #999;
-    font-family: "Lato", sans-serif;
-    font-size: 14px;
-  }
-}
-/* line 74, ../sass/landing/_contact-us.scss */
-.contact-us form label {
-  display: inline-block;
-  margin-top: 10px;
-  font-size: 10px;
-}
-/* line 78, ../sass/landing/_contact-us.scss */
-.contact-us form label #newsletter-subscribe {
-  width: 17px;
-  height: 17px;
-  margin-top: 8px;
-}
-@media screen and (min-width: 591px) {
-  /* line 74, ../sass/landing/_contact-us.scss */
-  .contact-us form label {
+@media screen and (min-width: 461px) and (max-width: 899px) {
+  /* line 15, ../sass/landing/_services.scss */
+  .services ul li {
+    width: 49.15254%;
     float: left;
+    margin-right: 1.69492%;
   }
-}
-@media screen and (min-width: 591px) {
-  /* line 20, ../sass/landing/_contact-us.scss */
-  .contact-us form {
-    width: 560px;
-    margin: 0 auto;
-  }
-}
-/* line 92, ../sass/landing/_contact-us.scss */
-.contact-us .submit {
-  display: block;
-  margin: 10px auto;
-  width: 146px;
-  height: 51px;
-  border: 1px solid #15a4fa;
-  border-radius: 2px;
-  background: transparent;
-  color: white;
-  font-size: 18px;
-  transition: 0.4s ease;
-}
-/* line 103, ../sass/landing/_contact-us.scss */
-.contact-us .submit:hover {
-  background-color: #15a4fa;
-}
-@media screen and (min-width: 591px) {
-  /* line 92, ../sass/landing/_contact-us.scss */
-  .contact-us .submit {
+  /* line 20, ../sass/landing/_services.scss */
+  .services ul li:nth-of-type(2) {
     float: right;
-    margin-bottom: 100px;
+    margin-right: 0;
   }
+  /* line 23, ../sass/landing/_services.scss */
+  .services ul li:nth-of-type(4) {
+    float: right;
+    margin-right: 0;
+  }
+  /* line 26, ../sass/landing/_services.scss */
+  .services ul li:nth-of-type(6) {
+    float: right;
+    margin-right: 0;
+  }
+  /* line 29, ../sass/landing/_services.scss */
+  .services ul li:nth-of-type(8) {
+    float: right;
+    margin-right: 0;
+  }
+}
+@media screen and (min-width: 900px) and (max-width: 1059px) {
+  /* line 15, ../sass/landing/_services.scss */
+  .services ul li {
+    margin-bottom: 90px;
+    width: 32.20339%;
+    float: left;
+    margin-right: 1.69492%;
+  }
+  /* line 36, ../sass/landing/_services.scss */
+  .services ul li:nth-of-type(3) {
+    float: right;
+    margin-right: 0;
+  }
+  /* line 39, ../sass/landing/_services.scss */
+  .services ul li:nth-of-type(6) {
+    float: right;
+    margin-right: 0;
+  }
+}
+@media screen and (min-width: 1060px) {
+  /* line 15, ../sass/landing/_services.scss */
+  .services ul li {
+    margin-bottom: 90px;
+    width: 23.72881%;
+    float: left;
+    margin-right: 1.69492%;
+  }
+  /* line 46, ../sass/landing/_services.scss */
+  .services ul li:nth-of-type(4) {
+    float: right;
+    margin-right: 0;
+  }
+  /* line 49, ../sass/landing/_services.scss */
+  .services ul li:nth-of-type(8) {
+    float: right;
+    margin-right: 0;
+  }
+}
+/* line 53, ../sass/landing/_services.scss */
+.services ul li p {
+  font-size: 10px;
+  text-align: justify;
+  font-weight: 400;
+  line-height: 20px;
+}
+@media screen and (min-width: 768px) {
+  /* line 53, ../sass/landing/_services.scss */
+  .services ul li p {
+    font-size: 13px;
+  }
+}
+/* line 64, ../sass/landing/_services.scss */
+.services .head-contents {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+/* line 68, ../sass/landing/_services.scss */
+.services .head-contents h4 {
+  color: #fefefe;
+  font-family: Montserrat;
+  font-size: 10px;
+  font-weight: 700;
+}
+@media screen and (min-width: 768px) {
+  /* line 68, ../sass/landing/_services.scss */
+  .services .head-contents h4 {
+    font-size: 18px;
+  }
+}
+/* line 78, ../sass/landing/_services.scss */
+.services span {
+  color: black;
+  width: 42px;
+  height: 42px;
+  margin-right: 10px;
+  padding: 5px;
+  background-color: white;
+  border-radius: 2px 1px 1px 2px;
+  text-align: center;
+  line-height: 2;
+  font-size: 18px;
 }
 
 /* line 1, ../sass/layout/_footer.scss */
