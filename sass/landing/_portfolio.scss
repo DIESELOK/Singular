@@ -1,39 +1,43 @@
-.portfolio{
+.portfolio {
   @include clearfix;
   background-color: #222;
-  h2{
-    margin:50px auto;
-    color:#fff;
+  h2 {
+    margin: 50px auto;
+    color: #fff;
     text-align: center;
     font-size: 20px;
     font-weight: 400;
-    @media screen and (min-width:768px){
-      margin:90px auto 80px;
+    @media screen and (min-width: 768px) {
+      margin: 90px auto 80px;
       font-size: 40px;
     }
   }
   .filter-navigation {
-    margin:0 auto;
-    text-align:center;
+    margin: 0 auto;
+    text-align: center;
     li {
       display: inline-block;
       margin: 0 auto 40px;
       width: 145px;
-      @media screen and (min-width: 324px)and (max-width: 532px) {
-        &:first-child{
-          display:block;
+
+      @media screen and (min-width: 324px) and (max-width: 532px) {
+        &:first-child {
+          display: block;
         }
       }
       @media screen and (min-width: 533px) {
         margin: 0 10px 40px;
       }
-      a {
+      .filter{
         width: 145px;
         padding: 10px 40px;
         border: 2px solid #d11f2d;
+        background: transparent;
+        cursor: pointer;
         font-size: 10px;
         text-align: center;
         color: #fff;
+        transition: 1s;
         &:hover, &:focus {
           color: #d11f2d;
           border: 2px solid #fff;
@@ -43,6 +47,66 @@
           font-size: 14px;
         }
       }
+    }
+  }
+  .portfolio-list {
+    margin: 25px auto 0;
+    text-align: center;
+    li {
+      position: relative;
+      display: block;
+      margin: 0 auto;
+      text-align: center;
+      @media screen and (min-width: 656px) {
+        display: inline-block;
+      }
+      .portfolio-rollover {
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        background-color: rgba(34, 34, 34, 0.75);
+        opacity: 0;
+        text-align: center;
+        transition: 0.5s;
+        a {
+          position:relative;
+          display: block;
+          margin-top: 4%;
+          left: 5%;
+          width: 90%;
+          height: 86%;
+          border: 1px solid white;
+        }
+        &:hover {
+          opacity: 1;
+        }
+      }
+      h4 {
+        position: absolute;
+        top: 35%;
+        left: 0;
+        right: 0;
+        text-align: center;
+        color: white;
+        font-family: Montserrat;
+        font-size: 14px;
+        font-weight: 700;
+      }
+      span {
+        dispalay:block;
+        position: absolute;
+        top: 45%;
+        left: 0;
+        right: 0;
+        color: white;
+        font-size: 10px;
+        text-transform: uppercase;
+      }
+    }
+    .mix{
+      display:none;
     }
   }
 }

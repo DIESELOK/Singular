@@ -6,7 +6,7 @@
     <title>Singular</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link href="styles/style.css" rel="stylesheet" type="text/css" />
-    <script src="https://code.jquery.com/jquery.min.js"></script>
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
 </head>
 <body>
 <div class="wrapper">
@@ -152,9 +152,77 @@
         <div class="container">
             <h2>Featured Work</h2>
             <ul class="filter-navigation">
-                <li><a href="#" class="">View all</a></li>
-                <li><a href="#" class="">Websites</a></li>
-                <li><a href="#" class="">Freebies</a></li>
+                <li><button class="filter" data-filter="all">View all</button></li>
+                <li><button class="filter" data-filter=".sites">Websites</button></li>
+                <li><button class="filter" data-filter=".freebies">Freebies</button></li>
+            </ul>
+        </div>
+        <div>
+            <ul id="portfolio-list" class="portfolio-list">
+                <li class="mix freebies">
+                    <img src="images/portf-img-0.jpg" alt="Portfolio Gallery">
+                    <div class="portfolio-rollover">
+                        <a href="#"></a>
+                        <h4>A Beautiful Heading</h4>
+                        <span>Freebies</span>
+                    </div>
+                </li>
+                <li class="mix sites">
+                    <img src="images/portf-img-01.jpg" alt="Portfolio Gallery">
+                    <div class="portfolio-rollover">
+                        <a href="#"></a>
+                        <h4>A Beautiful Heading</h4>
+                        <span>Websites</span>
+                    </div>
+                </li>
+                <li class="mix freebies">
+                    <img src="images/portf-img-02.jpg" alt="Portfolio Gallery">
+                    <div class="portfolio-rollover">
+                        <a href="#"></a>
+                        <h4>A Beautiful Heading</h4>
+                        <span>Freebies</span>
+                    </div>
+                </li>
+                <li class="mix sites">
+                    <img src="images/portf-img-03.jpg" alt="Portfolio Gallery">
+                    <div class="portfolio-rollover">
+                        <a href="#"></a>
+                        <h4>A Beautiful Heading</h4>
+                        <span>Websites</span>
+                    </div>
+                </li>
+                <li class="mix freebies">
+                    <img src="images/portf-img-04.jpg" alt="Portfolio Gallery">
+                    <div class="portfolio-rollover">
+                        <a href="#"></a>
+                        <h4>A Beautiful Heading</h4>
+                        <span>Freebies</span>
+                    </div>
+                </li>
+                <li class="mix sites">
+                    <img src="images/portf-img-05.jpg" alt="Portfolio Gallery">
+                    <div class="portfolio-rollover">
+                        <a href="#"></a>
+                        <h4>A Beautiful Heading</h4>
+                        <span>Websites</span>
+                    </div>
+                </li>
+                <li class="mix freebies">
+                    <img src="images/portf-img-06.jpg" alt="Portfolio Gallery">
+                    <div class="portfolio-rollover">
+                        <a href="#"></a>
+                        <h4>A Beautiful Heading</h4>
+                        <span>Freebies</span>
+                    </div>
+                </li>
+                <li class="mix sites">
+                    <img src="images/portf-img-07.jpg" alt="Portfolio Gallery">
+                    <div class="portfolio-rollover">
+                        <a href="#"></a>
+                        <h4>A Beautiful Heading</h4>
+                        <span>Websites</span>
+                    </div>
+                </li>
             </ul>
         </div>
     </section>
@@ -195,5 +263,9 @@
                 </footer>
                 -->
 </div>
+
+
+<script src="javascripts/jquery.mixitup.js"></script>
+<script src="javascripts/script.js"></script>
 </body>
 </html>

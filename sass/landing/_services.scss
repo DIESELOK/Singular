@@ -2,7 +2,7 @@
   background-color: #d11f2d;
   color:#fff;
   h2{
-    margin:10px auto 10px;
+    margin:25px auto 10px;
     text-align: center;
     font-weight: 400;
     @media screen and (min-width: 768px) {
@@ -12,6 +12,7 @@
   }
   ul{
     overflow: hidden;
+    margin-bottom: 25px;
     li{
       padding: 10px;
       @include span(12 of 12);

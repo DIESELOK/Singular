@@ -187,6 +187,11 @@ header .dropdown .dropdown-menu a {
   color: white;
   font-size: 10px;
   font-weight: 700;
+  transition: 0.5s;
+}
+/* line 85, ../sass/layout/_header.scss */
+header .dropdown .dropdown-menu a:hover {
+  color: red;
 }
 @media screen and (min-width: 768px) {
   /* line 80, ../sass/layout/_header.scss */
@@ -336,11 +341,18 @@ header .dropdown .dropdown-menu a {
   width: 100%;
   padding: 15px;
   border: 3px solid white;
-  margin: 0 auto 10px;
+  margin: 0 auto 25px;
   color: white;
   font-size: 15px;
   font-weight: 400;
   text-align: center;
+  transition: 1s;
+}
+/* line 29, ../sass/landing/_download-section.scss */
+.download-section .download-btn:hover {
+  border: 3px solid #222;
+  color: #222;
+  background: white;
 }
 @media screen and (min-width: 420px) {
   /* line 18, ../sass/landing/_download-section.scss */
@@ -370,7 +382,7 @@ header .dropdown .dropdown-menu a {
 }
 /* line 7, ../sass/landing/_features.scss */
 .features h2 {
-  margin: 10px auto 10px;
+  margin: 25px auto 10px;
   text-align: center;
   color: #fff;
   font-weight: 400;
@@ -385,7 +397,7 @@ header .dropdown .dropdown-menu a {
 /* line 17, ../sass/landing/_features.scss */
 .features h3 {
   margin-bottom: 20px;
-  text-align: left;
+  text-align: center;
   color: #fff;
   text-transform: uppercase;
   font-weight: 700;
@@ -396,13 +408,14 @@ header .dropdown .dropdown-menu a {
   /* line 17, ../sass/landing/_features.scss */
   .features h3 {
     font-size: 18px;
+    text-align: left;
   }
 }
-/* line 29, ../sass/landing/_features.scss */
+/* line 30, ../sass/landing/_features.scss */
 .features h4 {
   color: #fff;
 }
-/* line 32, ../sass/landing/_features.scss */
+/* line 33, ../sass/landing/_features.scss */
 .features p {
   widht: 50%;
   text-align: center;
@@ -411,7 +424,7 @@ header .dropdown .dropdown-menu a {
   font-weight: 400;
 }
 @media screen and (min-width: 768px) {
-  /* line 32, ../sass/landing/_features.scss */
+  /* line 33, ../sass/landing/_features.scss */
   .features p {
     width: 486px;
     color: white;
@@ -420,12 +433,12 @@ header .dropdown .dropdown-menu a {
     text-align: justify;
   }
 }
-/* line 46, ../sass/landing/_features.scss */
+/* line 47, ../sass/landing/_features.scss */
 .features .features-list {
   float: left;
-  margin-top: 60px;
+  margin: 60px 0 15px;
 }
-/* line 49, ../sass/landing/_features.scss */
+/* line 50, ../sass/landing/_features.scss */
 .features .features-list li {
   display: flex;
   width: 100%;
@@ -433,11 +446,11 @@ header .dropdown .dropdown-menu a {
   margin: 20px 0 10px;
   float: left;
 }
-/* line 55, ../sass/landing/_features.scss */
+/* line 56, ../sass/landing/_features.scss */
 .features .features-list li p {
   text-align: left;
 }
-/* line 59, ../sass/landing/_features.scss */
+/* line 60, ../sass/landing/_features.scss */
 .features .features-list .fa {
   float: left;
   margin-right: 10px;
@@ -484,7 +497,7 @@ header .dropdown .dropdown-menu a {
   width: 145px;
 }
 @media screen and (min-width: 324px) and (max-width: 532px) {
-  /* line 23, ../sass/landing/_portfolio.scss */
+  /* line 24, ../sass/landing/_portfolio.scss */
   .portfolio .filter-navigation li:first-child {
     display: block;
   }
@@ -495,26 +508,100 @@ header .dropdown .dropdown-menu a {
     margin: 0 10px 40px;
   }
 }
-/* line 30, ../sass/landing/_portfolio.scss */
-.portfolio .filter-navigation li a {
+/* line 31, ../sass/landing/_portfolio.scss */
+.portfolio .filter-navigation li .filter {
   width: 145px;
   padding: 10px 40px;
   border: 2px solid #d11f2d;
+  background: transparent;
+  cursor: pointer;
   font-size: 10px;
   text-align: center;
   color: #fff;
+  transition: 1s;
 }
-/* line 37, ../sass/landing/_portfolio.scss */
-.portfolio .filter-navigation li a:hover, .portfolio .filter-navigation li a:focus {
+/* line 41, ../sass/landing/_portfolio.scss */
+.portfolio .filter-navigation li .filter:hover, .portfolio .filter-navigation li .filter:focus {
   color: #d11f2d;
   border: 2px solid #fff;
   background-color: #fff;
 }
 @media screen and (min-width: 480px) {
-  /* line 30, ../sass/landing/_portfolio.scss */
-  .portfolio .filter-navigation li a {
+  /* line 31, ../sass/landing/_portfolio.scss */
+  .portfolio .filter-navigation li .filter {
     font-size: 14px;
   }
+}
+/* line 52, ../sass/landing/_portfolio.scss */
+.portfolio .portfolio-list {
+  margin: 25px auto 0;
+  text-align: center;
+}
+/* line 55, ../sass/landing/_portfolio.scss */
+.portfolio .portfolio-list li {
+  position: relative;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
+@media screen and (min-width: 656px) {
+  /* line 55, ../sass/landing/_portfolio.scss */
+  .portfolio .portfolio-list li {
+    display: inline-block;
+  }
+}
+/* line 63, ../sass/landing/_portfolio.scss */
+.portfolio .portfolio-list li .portfolio-rollover {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(34, 34, 34, 0.75);
+  opacity: 0;
+  text-align: center;
+  transition: 0.5s;
+}
+/* line 73, ../sass/landing/_portfolio.scss */
+.portfolio .portfolio-list li .portfolio-rollover a {
+  position: relative;
+  display: block;
+  margin-top: 4%;
+  left: 5%;
+  width: 90%;
+  height: 86%;
+  border: 1px solid white;
+}
+/* line 82, ../sass/landing/_portfolio.scss */
+.portfolio .portfolio-list li .portfolio-rollover:hover {
+  opacity: 1;
+}
+/* line 86, ../sass/landing/_portfolio.scss */
+.portfolio .portfolio-list li h4 {
+  position: absolute;
+  top: 35%;
+  left: 0;
+  right: 0;
+  text-align: center;
+  color: white;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 700;
+}
+/* line 97, ../sass/landing/_portfolio.scss */
+.portfolio .portfolio-list li span {
+  dispalay: block;
+  position: absolute;
+  top: 45%;
+  left: 0;
+  right: 0;
+  color: white;
+  font-size: 10px;
+  text-transform: uppercase;
+}
+/* line 108, ../sass/landing/_portfolio.scss */
+.portfolio .portfolio-list .mix {
+  display: none;
 }
 
 /* line 1, ../sass/landing/_services.scss */
@@ -524,7 +611,7 @@ header .dropdown .dropdown-menu a {
 }
 /* line 4, ../sass/landing/_services.scss */
 .services h2 {
-  margin: 10px auto 10px;
+  margin: 25px auto 10px;
   text-align: center;
   font-weight: 400;
 }
@@ -538,8 +625,9 @@ header .dropdown .dropdown-menu a {
 /* line 13, ../sass/landing/_services.scss */
 .services ul {
   overflow: hidden;
+  margin-bottom: 25px;
 }
-/* line 15, ../sass/landing/_services.scss */
+/* line 16, ../sass/landing/_services.scss */
 .services ul li {
   padding: 10px;
   width: 100%;
@@ -548,72 +636,72 @@ header .dropdown .dropdown-menu a {
   margin-right: 0;
 }
 @media screen and (min-width: 461px) and (max-width: 899px) {
-  /* line 15, ../sass/landing/_services.scss */
+  /* line 16, ../sass/landing/_services.scss */
   .services ul li {
     width: 49.15254%;
     float: left;
     margin-right: 1.69492%;
   }
-  /* line 20, ../sass/landing/_services.scss */
+  /* line 21, ../sass/landing/_services.scss */
   .services ul li:nth-of-type(2) {
     float: right;
     margin-right: 0;
   }
-  /* line 23, ../sass/landing/_services.scss */
+  /* line 24, ../sass/landing/_services.scss */
   .services ul li:nth-of-type(4) {
     float: right;
     margin-right: 0;
   }
-  /* line 26, ../sass/landing/_services.scss */
+  /* line 27, ../sass/landing/_services.scss */
   .services ul li:nth-of-type(6) {
     float: right;
     margin-right: 0;
   }
-  /* line 29, ../sass/landing/_services.scss */
+  /* line 30, ../sass/landing/_services.scss */
   .services ul li:nth-of-type(8) {
     float: right;
     margin-right: 0;
   }
 }
 @media screen and (min-width: 900px) and (max-width: 1059px) {
-  /* line 15, ../sass/landing/_services.scss */
+  /* line 16, ../sass/landing/_services.scss */
   .services ul li {
     margin-bottom: 90px;
     width: 32.20339%;
     float: left;
     margin-right: 1.69492%;
   }
-  /* line 36, ../sass/landing/_services.scss */
+  /* line 37, ../sass/landing/_services.scss */
   .services ul li:nth-of-type(3) {
     float: right;
     margin-right: 0;
   }
-  /* line 39, ../sass/landing/_services.scss */
+  /* line 40, ../sass/landing/_services.scss */
   .services ul li:nth-of-type(6) {
     float: right;
     margin-right: 0;
   }
 }
 @media screen and (min-width: 1060px) {
-  /* line 15, ../sass/landing/_services.scss */
+  /* line 16, ../sass/landing/_services.scss */
   .services ul li {
     margin-bottom: 90px;
     width: 23.72881%;
     float: left;
     margin-right: 1.69492%;
   }
-  /* line 46, ../sass/landing/_services.scss */
+  /* line 47, ../sass/landing/_services.scss */
   .services ul li:nth-of-type(4) {
     float: right;
     margin-right: 0;
   }
-  /* line 49, ../sass/landing/_services.scss */
+  /* line 50, ../sass/landing/_services.scss */
   .services ul li:nth-of-type(8) {
     float: right;
     margin-right: 0;
   }
 }
-/* line 53, ../sass/landing/_services.scss */
+/* line 54, ../sass/landing/_services.scss */
 .services ul li p {
   font-size: 10px;
   text-align: justify;
@@ -621,18 +709,18 @@ header .dropdown .dropdown-menu a {
   line-height: 20px;
 }
 @media screen and (min-width: 768px) {
-  /* line 53, ../sass/landing/_services.scss */
+  /* line 54, ../sass/landing/_services.scss */
   .services ul li p {
     font-size: 13px;
   }
 }
-/* line 64, ../sass/landing/_services.scss */
+/* line 65, ../sass/landing/_services.scss */
 .services .head-contents {
   display: flex;
   align-items: center;
   margin-bottom: 10px;
 }
-/* line 68, ../sass/landing/_services.scss */
+/* line 69, ../sass/landing/_services.scss */
 .services .head-contents h4 {
   color: #fefefe;
   font-family: Montserrat;
@@ -640,12 +728,12 @@ header .dropdown .dropdown-menu a {
   font-weight: 700;
 }
 @media screen and (min-width: 768px) {
-  /* line 68, ../sass/landing/_services.scss */
+  /* line 69, ../sass/landing/_services.scss */
   .services .head-contents h4 {
     font-size: 18px;
   }
 }
-/* line 78, ../sass/landing/_services.scss */
+/* line 79, ../sass/landing/_services.scss */
 .services span {
   color: black;
   width: 42px;
