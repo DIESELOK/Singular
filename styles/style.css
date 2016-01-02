@@ -990,7 +990,6 @@ header .dropdown .dropdown-menu a:hover {
 }
 /* line 29, ../sass/landing/_contact.scss */
 .contact .contact-btn:hover {
-  border: 3px solid #252525;
   color: red;
   background: white;
 }
