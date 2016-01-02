@@ -1,5 +1,5 @@
 header{
-  background-color: transparent;
+  background-color: rgba(34, 34, 34, 0.5);
   position:fixed;
   z-index:1;
   width: 100%;
@@ -16,7 +16,7 @@ header{
     width:160px;
     line-height: 0.5px;
     @media screen and (min-width: 768px) {
-      margin-top:40px;
+      margin-top:10px;
       width:190px;
     }
     .logo{
@@ -34,7 +34,7 @@ header{
       overflow:hidden;
       height:12px;
       width: 75px;
-      background:linear-gradient(to right, rgba(1, 138, 218, 1) 33%, rgba(1, 138, 218, 0.75) 33%, rgba(1, 138, 218, 0.5) 25%, rgba(1, 138, 218, 0) 9%);
+      background: linear-gradient(to right, rgba(1, 138, 218, 1) 33%, rgba(1, 138, 218, 0.5) 66%, rgba(1, 138, 218, 0.5) 33%);
     }
     .logo-text{
       color: white;
@@ -50,9 +50,9 @@ header{
     float: right;
     position: relative;
     width: 113px;
-    height: 100px;
+    height: 83px;
     @media screen and (min-width: 768px) {
-      margin-top:40px;
+      margin-top:10px;
     }
     button{
       background: transparent;

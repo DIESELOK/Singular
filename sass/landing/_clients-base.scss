@@ -1,0 +1,25 @@
+.clients-base{
+  @include clearfix;
+  background-color: #f4f4f4;
+  h2{
+    margin:25px auto 35px;
+    text-align: center;
+    color:#222;
+    font-weight: 400;
+    font-size: 40px;
+    @media screen and (min-width: 768px) {
+      margin:90px 0 70px;
+    }
+  }
+  ul{
+    margin:0 auto 25px;
+    text-align: justify;
+    @media screen and (min-width: 768px) {
+      margin-bottom:90px;
+    }
+    li{
+      display:inline-block;
+      margin: 2%;
+    }
+  }
+}

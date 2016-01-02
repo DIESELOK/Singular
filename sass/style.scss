@@ -11,8 +11,11 @@
 @import "landing/intro";
 @import "landing/download-section";
 @import "landing/features";
-@import "landing/portfolio";
 @import "landing/services";
+@import "landing/portfolio";
+@import "landing/team";
+@import "landing/clients-base";
+@import "landing/contact";
 @import "layout/footer";
 @include border-box-sizing();
 .container{

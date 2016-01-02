@@ -73,7 +73,7 @@ a:hover {
 
 /* line 1, ../sass/layout/_header.scss */
 header {
-  background-color: transparent;
+  background-color: rgba(34, 34, 34, 0.5);
   position: fixed;
   z-index: 1;
   width: 100%;
@@ -99,7 +99,7 @@ header h1 {
 @media screen and (min-width: 768px) {
   /* line 13, ../sass/layout/_header.scss */
   header h1 {
-    margin-top: 40px;
+    margin-top: 10px;
     width: 190px;
   }
 }
@@ -123,7 +123,7 @@ header h1 .gradient-element {
   overflow: hidden;
   height: 12px;
   width: 75px;
-  background: linear-gradient(to right, #018ada 33%, rgba(1, 138, 218, 0.75) 33%, rgba(1, 138, 218, 0.5) 25%, rgba(1, 138, 218, 0) 9%);
+  background: linear-gradient(to right, #018ada 33%, rgba(1, 138, 218, 0.5) 66%, rgba(1, 138, 218, 0.5) 33%);
 }
 /* line 39, ../sass/layout/_header.scss */
 header h1 .logo-text {
@@ -143,12 +143,12 @@ header .dropdown {
   float: right;
   position: relative;
   width: 113px;
-  height: 100px;
+  height: 83px;
 }
 @media screen and (min-width: 768px) {
   /* line 48, ../sass/layout/_header.scss */
   header .dropdown {
-    margin-top: 40px;
+    margin-top: 10px;
   }
 }
 /* line 57, ../sass/layout/_header.scss */
@@ -464,6 +464,148 @@ header .dropdown .dropdown-menu a:hover {
   background-color: #fff;
 }
 
+/* line 1, ../sass/landing/_services.scss */
+.services {
+  background-color: #d11f2d;
+  color: #fff;
+}
+/* line 4, ../sass/landing/_services.scss */
+.services h2 {
+  margin: 25px auto 10px;
+  text-align: center;
+  font-weight: 400;
+}
+@media screen and (min-width: 768px) {
+  /* line 4, ../sass/landing/_services.scss */
+  .services h2 {
+    margin: 90px 0 70px;
+    font-size: 40px;
+  }
+}
+/* line 13, ../sass/landing/_services.scss */
+.services ul {
+  overflow: hidden;
+}
+/* line 16, ../sass/landing/_services.scss */
+.services ul li {
+  padding: 10px;
+  width: 100%;
+  float: left;
+  margin-left: 0;
+  margin-right: 0;
+}
+@media screen and (min-width: 461px) and (max-width: 899px) {
+  /* line 16, ../sass/landing/_services.scss */
+  .services ul li {
+    width: 49.15254%;
+    float: left;
+    margin-right: 1.69492%;
+  }
+  /* line 21, ../sass/landing/_services.scss */
+  .services ul li:nth-of-type(2) {
+    float: right;
+    margin-right: 0;
+  }
+  /* line 24, ../sass/landing/_services.scss */
+  .services ul li:nth-of-type(4) {
+    float: right;
+    margin-right: 0;
+  }
+  /* line 27, ../sass/landing/_services.scss */
+  .services ul li:nth-of-type(6) {
+    float: right;
+    margin-right: 0;
+  }
+  /* line 30, ../sass/landing/_services.scss */
+  .services ul li:nth-of-type(8) {
+    float: right;
+    margin-right: 0;
+  }
+}
+@media screen and (min-width: 900px) and (max-width: 1059px) {
+  /* line 16, ../sass/landing/_services.scss */
+  .services ul li {
+    margin-bottom: 90px;
+    width: 32.20339%;
+    float: left;
+    margin-right: 1.69492%;
+  }
+  /* line 37, ../sass/landing/_services.scss */
+  .services ul li:nth-of-type(3) {
+    float: right;
+    margin-right: 0;
+  }
+  /* line 40, ../sass/landing/_services.scss */
+  .services ul li:nth-of-type(6) {
+    float: right;
+    margin-right: 0;
+  }
+}
+@media screen and (min-width: 1060px) {
+  /* line 16, ../sass/landing/_services.scss */
+  .services ul li {
+    margin-bottom: 90px;
+    width: 23.72881%;
+    float: left;
+    margin-right: 1.69492%;
+  }
+  /* line 47, ../sass/landing/_services.scss */
+  .services ul li:nth-of-type(4) {
+    float: right;
+    margin-right: 0;
+  }
+  /* line 50, ../sass/landing/_services.scss */
+  .services ul li:nth-of-type(8) {
+    float: right;
+    margin-right: 0;
+  }
+}
+/* line 54, ../sass/landing/_services.scss */
+.services ul li p {
+  font-size: 10px;
+  text-align: justify;
+  font-weight: 400;
+  line-height: 20px;
+}
+@media screen and (min-width: 768px) {
+  /* line 54, ../sass/landing/_services.scss */
+  .services ul li p {
+    font-size: 13px;
+  }
+}
+/* line 65, ../sass/landing/_services.scss */
+.services .head-contents {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+/* line 69, ../sass/landing/_services.scss */
+.services .head-contents h4 {
+  color: #fefefe;
+  font-family: Montserrat;
+  font-size: 10px;
+  font-weight: 700;
+}
+@media screen and (min-width: 768px) {
+  /* line 69, ../sass/landing/_services.scss */
+  .services .head-contents h4 {
+    font-size: 18px;
+  }
+}
+/* line 79, ../sass/landing/_services.scss */
+.services span {
+  color: black;
+  width: 42px;
+  height: 42px;
+  margin-right: 10px;
+  padding: 5px;
+  background-color: white;
+  border-radius: 2px 1px 1px 2px;
+  text-align: center;
+  line-height: 2;
+  font-size: 18px;
+}
+
 /* line 1, ../sass/landing/_portfolio.scss */
 .portfolio {
   overflow: hidden;
@@ -604,197 +746,339 @@ header .dropdown .dropdown-menu a:hover {
   display: none;
 }
 
-/* line 1, ../sass/landing/_services.scss */
-.services {
-  background-color: #d11f2d;
-  color: #fff;
+/* line 1, ../sass/landing/_team.scss */
+.team {
+  overflow: hidden;
+  *zoom: 1;
+  background: #fff;
 }
-/* line 4, ../sass/landing/_services.scss */
-.services h2 {
-  margin: 25px auto 10px;
+/* line 4, ../sass/landing/_team.scss */
+.team h2 {
+  margin: 25px auto 25px;
+  color: #222;
+  font-size: 20px;
   text-align: center;
-  font-weight: 400;
 }
 @media screen and (min-width: 768px) {
-  /* line 4, ../sass/landing/_services.scss */
-  .services h2 {
-    margin: 90px 0 70px;
+  /* line 4, ../sass/landing/_team.scss */
+  .team h2 {
+    margin: 100px auto 50px;
     font-size: 40px;
   }
 }
-/* line 13, ../sass/landing/_services.scss */
-.services ul {
-  overflow: hidden;
-  margin-bottom: 25px;
+/* line 14, ../sass/landing/_team.scss */
+.team p {
+  margin: 0 auto 25px;
+  color: #222;
+  font-size: 10px;
+  font-weight: 300;
+  text-align: center;
 }
-/* line 16, ../sass/landing/_services.scss */
-.services ul li {
-  padding: 10px;
-  width: 100%;
-  float: left;
-  margin-left: 0;
-  margin-right: 0;
+@media screen and (min-width: 768px) {
+  /* line 14, ../sass/landing/_team.scss */
+  .team p {
+    width: 720px;
+    margin: 0 auto 80px;
+    font-size: 22px;
+  }
 }
-@media screen and (min-width: 461px) and (max-width: 899px) {
-  /* line 16, ../sass/landing/_services.scss */
-  .services ul li {
+/* line 26, ../sass/landing/_team.scss */
+.team .team-list {
+  margin: 0 auto;
+  text-align: center;
+}
+/* line 29, ../sass/landing/_team.scss */
+.team .team-list li {
+  display: inline-block;
+  margin-bottom: 30px;
+  max-width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 12, ../../../../../Ruby22/lib/ruby/gems/2.2.0/gems/susy-2.2.9/sass/susy/output/support/_clearfix.scss */
+.team .team-list li:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+@media screen and (min-width: 461px) and (max-width: 655px) {
+  /* line 29, ../sass/landing/_team.scss */
+  .team .team-list li {
     width: 49.15254%;
     float: left;
     margin-right: 1.69492%;
   }
-  /* line 21, ../sass/landing/_services.scss */
-  .services ul li:nth-of-type(2) {
+  /* line 35, ../sass/landing/_team.scss */
+  .team .team-list li:nth-of-type(2) {
     float: right;
     margin-right: 0;
   }
-  /* line 24, ../sass/landing/_services.scss */
-  .services ul li:nth-of-type(4) {
-    float: right;
-    margin-right: 0;
-  }
-  /* line 27, ../sass/landing/_services.scss */
-  .services ul li:nth-of-type(6) {
-    float: right;
-    margin-right: 0;
-  }
-  /* line 30, ../sass/landing/_services.scss */
-  .services ul li:nth-of-type(8) {
+  /* line 38, ../sass/landing/_team.scss */
+  .team .team-list li:nth-of-type(4) {
     float: right;
     margin-right: 0;
   }
 }
-@media screen and (min-width: 900px) and (max-width: 1059px) {
-  /* line 16, ../sass/landing/_services.scss */
-  .services ul li {
-    margin-bottom: 90px;
+@media screen and (min-width: 656px) and (max-width: 899px) {
+  /* line 29, ../sass/landing/_team.scss */
+  .team .team-list li {
     width: 32.20339%;
     float: left;
     margin-right: 1.69492%;
   }
-  /* line 37, ../sass/landing/_services.scss */
-  .services ul li:nth-of-type(3) {
-    float: right;
-    margin-right: 0;
-  }
-  /* line 40, ../sass/landing/_services.scss */
-  .services ul li:nth-of-type(6) {
+  /* line 44, ../sass/landing/_team.scss */
+  .team .team-list li:nth-of-type(3) {
     float: right;
     margin-right: 0;
   }
 }
-@media screen and (min-width: 1060px) {
-  /* line 16, ../sass/landing/_services.scss */
-  .services ul li {
-    margin-bottom: 90px;
+@media screen and (min-width: 900px) {
+  /* line 29, ../sass/landing/_team.scss */
+  .team .team-list li {
     width: 23.72881%;
     float: left;
     margin-right: 1.69492%;
   }
-  /* line 47, ../sass/landing/_services.scss */
-  .services ul li:nth-of-type(4) {
-    float: right;
-    margin-right: 0;
-  }
-  /* line 50, ../sass/landing/_services.scss */
-  .services ul li:nth-of-type(8) {
+  /* line 50, ../sass/landing/_team.scss */
+  .team .team-list li:nth-of-type(4) {
     float: right;
     margin-right: 0;
   }
 }
-/* line 54, ../sass/landing/_services.scss */
-.services ul li p {
-  font-size: 10px;
-  text-align: justify;
-  font-weight: 400;
-  line-height: 20px;
+/* line 55, ../sass/landing/_team.scss */
+.team .team-list .active-team {
+  position: relative;
 }
-@media screen and (min-width: 768px) {
-  /* line 54, ../sass/landing/_services.scss */
-  .services ul li p {
-    font-size: 13px;
-  }
+/* line 57, ../sass/landing/_team.scss */
+.team .team-list .active-team .rollover {
+  position: absolute;
+  width: 100%;
+  height: 99%;
+  top: 0%;
+  left: 0;
+  bottom: 0px;
+  color: #fff;
+  background-color: rgba(34, 34, 34, 0.5);
+  opacity: 0;
+  transition: 0.5s;
 }
-/* line 65, ../sass/landing/_services.scss */
-.services .head-contents {
-  display: flex;
-  align-items: center;
-  margin-bottom: 10px;
+/* line 68, ../sass/landing/_team.scss */
+.team .team-list .active-team .rollover:hover {
+  opacity: 0.5;
 }
-/* line 69, ../sass/landing/_services.scss */
-.services .head-contents h4 {
-  color: #fefefe;
-  font-family: Montserrat;
-  font-size: 10px;
-  font-weight: 700;
+/* line 71, ../sass/landing/_team.scss */
+.team .team-list .active-team .rollover h4 {
+  margin-top: 100%;
+  color: white;
+  font-size: 23px;
 }
-@media screen and (min-width: 768px) {
-  /* line 69, ../sass/landing/_services.scss */
-  .services .head-contents h4 {
-    font-size: 18px;
-  }
-}
-/* line 79, ../sass/landing/_services.scss */
-.services span {
-  color: black;
-  width: 42px;
-  height: 42px;
-  margin-right: 10px;
-  padding: 5px;
-  background-color: white;
-  border-radius: 2px 1px 1px 2px;
-  text-align: center;
-  line-height: 2;
+/* line 76, ../sass/landing/_team.scss */
+.team .team-list .active-team .rollover span {
+  color: white;
   font-size: 18px;
+}
+/* line 82, ../sass/landing/_team.scss */
+.team .team-list .team-hiring {
+  position: relative;
+}
+/* line 84, ../sass/landing/_team.scss */
+.team .team-list .team-hiring .apply-description {
+  position: absolute;
+  width: 100%;
+  height: 99%;
+  left: 0%;
+  top: 0;
+}
+/* line 90, ../sass/landing/_team.scss */
+.team .team-list .team-hiring .apply-description span {
+  display: block;
+  width: 80px;
+  margin: 20% auto 50px;
+  color: #222;
+  font-size: 23px;
+}
+/* line 97, ../sass/landing/_team.scss */
+.team .team-list .team-hiring .apply-description a {
+  display: inline-block;
+  width: 180px;
+  padding: 18px 50px;
+  border: 3px solid #222;
+  color: #222;
+  font-size: 23px;
+  font-weight: 700;
+  transition: 0.5s;
+}
+/* line 106, ../sass/landing/_team.scss */
+.team .team-list .team-hiring .apply-description a:hover {
+  background: #222;
+  color: red;
+  border-color: red;
+}
+
+/* line 1, ../sass/landing/_clients-base.scss */
+.clients-base {
+  overflow: hidden;
+  *zoom: 1;
+  background-color: #f4f4f4;
+}
+/* line 4, ../sass/landing/_clients-base.scss */
+.clients-base h2 {
+  margin: 25px auto 35px;
+  text-align: center;
+  color: #222;
+  font-weight: 400;
+  font-size: 40px;
+}
+@media screen and (min-width: 768px) {
+  /* line 4, ../sass/landing/_clients-base.scss */
+  .clients-base h2 {
+    margin: 90px 0 70px;
+  }
+}
+/* line 14, ../sass/landing/_clients-base.scss */
+.clients-base ul {
+  margin: 0 auto 25px;
+  text-align: justify;
+}
+@media screen and (min-width: 768px) {
+  /* line 14, ../sass/landing/_clients-base.scss */
+  .clients-base ul {
+    margin-bottom: 90px;
+  }
+}
+/* line 20, ../sass/landing/_clients-base.scss */
+.clients-base ul li {
+  display: inline-block;
+  margin: 2%;
+}
+
+/* line 1, ../sass/landing/_contact.scss */
+.contact {
+  background-color: #d11f2d;
+}
+/* line 3, ../sass/landing/_contact.scss */
+.contact p {
+  margin: 50px auto 10px;
+  color: white;
+  font-size: 10px;
+  line-height: 18px;
+  text-align: center;
+}
+@media screen and (min-width: 920px) {
+  /* line 3, ../sass/landing/_contact.scss */
+  .contact p {
+    margin: 100px auto 70px;
+    padding: 0 15px;
+    width: 920px;
+    font-size: 20px;
+    line-height: 40px;
+  }
+}
+/* line 17, ../sass/landing/_contact.scss */
+.contact .contact-btn {
+  display: block;
+  width: 100%;
+  padding: 15px;
+  margin: 0 auto 25px;
+  background-color: white;
+  border-radius: 4px;
+  color: #252525;
+  font-size: 15px;
+  font-weight: 400;
+  text-align: center;
+  transition: 0.5s;
+}
+/* line 29, ../sass/landing/_contact.scss */
+.contact .contact-btn:hover {
+  border: 3px solid #252525;
+  color: red;
+  background: white;
+}
+@media screen and (min-width: 420px) {
+  /* line 17, ../sass/landing/_contact.scss */
+  .contact .contact-btn {
+    width: 240px;
+  }
+}
+@media screen and (min-width: 768px) {
+  /* line 17, ../sass/landing/_contact.scss */
+  .contact .contact-btn {
+    margin: 0 auto 100px;
+    width: 240px;
+    font-size: 24px;
+    font-weight: 700;
+  }
 }
 
 /* line 1, ../sass/layout/_footer.scss */
 footer {
-  background-color: #f6f9f9;
-  min-height: 90px;
+  background-color: #222;
 }
-/* line 4, ../sass/layout/_footer.scss */
+/* line 3, ../sass/layout/_footer.scss */
 footer .copyright {
-  color: #999;
-  font-size: 15px;
+  margin: 25px 0;
+  color: white;
+  font-size: 10px;
 }
-@media screen and (min-width: 391px) {
-  /* line 4, ../sass/layout/_footer.scss */
+@media screen and (min-width: 570px) {
+  /* line 3, ../sass/layout/_footer.scss */
   footer .copyright {
     display: inline-block;
     margin-top: 35px;
+    font-size: 14px;
   }
 }
-/* line 12, ../sass/layout/_footer.scss */
+/* line 13, ../sass/layout/_footer.scss */
 footer .social-networks {
-  margin-top: 10px;
+  text-align: center;
+  margin: 0 0 25px;
 }
-@media screen and (min-width: 391px) {
-  /* line 12, ../sass/layout/_footer.scss */
+@media screen and (min-width: 570px) {
+  /* line 13, ../sass/layout/_footer.scss */
   footer .social-networks {
     float: right;
     margin-top: 25px;
   }
 }
-/* line 18, ../sass/layout/_footer.scss */
+/* line 20, ../sass/layout/_footer.scss */
 footer .social-networks li {
   display: inline-block;
-  width: 40px;
-  height: 40px;
-  background-color: #15a4fa;
+  width: 50px;
+  height: 50px;
   border-radius: 2px;
   text-align: center;
 }
-/* line 25, ../sass/layout/_footer.scss */
+/* line 26, ../sass/layout/_footer.scss */
 footer .social-networks li a {
   display: block;
-  width: 40px;
-  height: 40px;
+  width: 50px;
+  height: 50px;
   padding: 10px;
   color: #fff;
 }
-/* line 31, ../sass/layout/_footer.scss */
+/* line 32, ../sass/layout/_footer.scss */
 footer .social-networks li a:hover {
-  background-color: #3b5998;
+  opacity: 0.5;
+}
+/* line 35, ../sass/layout/_footer.scss */
+footer .social-networks li a .fa {
+  font-size: 30px;
+}
+/* line 40, ../sass/layout/_footer.scss */
+footer .social-networks .behance-link {
+  background-color: #018ada;
+}
+/* line 43, ../sass/layout/_footer.scss */
+footer .social-networks .facebook-link {
+  background-color: #3c5a98;
+}
+/* line 46, ../sass/layout/_footer.scss */
+footer .social-networks .pinterest-link {
+  background-color: #d13f3f;
+}
+/* line 49, ../sass/layout/_footer.scss */
+footer .social-networks .dribbble-link {
+  background-color: #e95c93;
 }
 
 /* line 21, ../../../../../Ruby22/lib/ruby/gems/2.2.0/gems/susy-2.2.9/sass/susy/language/susy/_box-sizing.scss */
@@ -804,7 +1088,7 @@ footer .social-networks li a:hover {
   box-sizing: border-box;
 }
 
-/* line 18, ../sass/style.scss */
+/* line 21, ../sass/style.scss */
 .container {
   max-width: 1170px;
   margin-left: auto;
@@ -819,7 +1103,7 @@ footer .social-networks li a:hover {
   clear: both;
 }
 
-/* line 23, ../sass/style.scss */
+/* line 26, ../sass/style.scss */
 img {
   max-width: 100%;
   height: auto;

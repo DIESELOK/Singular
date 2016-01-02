@@ -1,0 +1,44 @@
+.contact{
+  background-color: #d11f2d;
+  p{
+    margin:50px auto 10px;
+    color: white;
+    font-size: 10px;
+    line-height: 18px;
+    text-align: center;
+    @media screen and (min-width: 920px) {
+      margin:100px auto 70px;
+      padding: 0 15px;
+      width:920px;
+      font-size: 20px;
+      line-height: 40px;
+    }
+  }
+  .contact-btn{
+    display:block;
+    width:100%;
+    padding:15px;
+    margin:0 auto 25px;
+    background-color: white;
+    border-radius: 4px;
+    color: #252525;
+    font-size: 15px;
+    font-weight: 400;
+    text-align: center;
+    transition: 0.5s;
+    &:hover{
+      border: 3px solid #252525;
+      color: red;
+      background: white;
+    }
+    @media screen and (min-width: 420px) {
+      width:240px;
+    }
+    @media screen and (min-width: 768px) {
+      margin:0 auto 100px;
+      width:240px;
+      font-size: 24px;
+      font-weight: 700;
+    }
+  }
+}
